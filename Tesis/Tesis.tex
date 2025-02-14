@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Autor: [Erick Sanchez Flores]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,letterpaper]{report}
+
+% Paquetes utilizados
+\usepackage[spanish]{babel}        % Idioma español
+\usepackage[utf8]{inputenc}        % Codificación UTF-8
+\usepackage{graphicx}             % Para incluir imágenes
+\usepackage{amsmath}              % Símbolos matemáticos avanzados
+\usepackage{hyperref}             % Hipervínculos en el documento
+\usepackage{natbib}               % Citas bibliográficas
+\usepackage{geometry}             % Ajuste de márgenes
+\geometry{letterpaper, margin=1in}
+
+% Configuración de bibliografía
+\bibliographystyle{apalike}       % Estilo de referencias
+
+\begin{document}
+	
+	%====================
+	% Portada
+	%====================
+	\title {Ciberseguridad}
+	\author{Erick Sanchez Flores}
+	\date{\today}
+	\maketitle
+	
+	%====================
+	% Resumen
+	%====================
+	\chapter*{Resumen}
+	\addcontentsline{toc}{chapter}{Resumen}
+	Resumen de la tesis, destacando los objetivos, metodología y resultados principales.
+	
+	%====================
+	% Índice
+	%====================
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	
+	%====================
+	% Capítulo 1: Introducción
+	%====================
+	\chapter{Introducción}
+	Contexto, la motivación y los objetivos de la tesis.
+	
+	%====================
+	% Capítulo 2: Marco Teórico
+	%====================
+	\chapter{Marco Teórico}
+	Conceptos teóricos relevantes para tu investigación.
+	
+	% Ejemplo de ecuación:
+	\begin{equation}
+		E=mc^2
+	\end{equation}
+	
+	%====================
+	% Capítulo 3: Metodología
+	%====================
+	\chapter{Metodología}
+	Investigación, métodos y herramientas utilizadas.
+	
+	%====================
+	% Capítulo 4: Resultados
+	%====================
+	\chapter{Resultados}
+	Hallazgos de la investigación con gráficos y tablas.
+	
+	% Ejemplo de figura:
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.5\textwidth]{imagenes/TecMM.png}
+		\caption{Logo del Tecnológico Mario Molina.}
+		\label{fig:ejemplo}
+	\end{figure}
+	
+	%====================
+	% Capítulo 5: Discusión
+	%====================
+	\chapter{Discusión}
+	Analiza e interpreta los resultados obtenidos.
+	
+	%====================
+	% Capítulo 6: Conclusiones
+	%====================
+	\chapter{Conclusiones}
+	Hallazgos principales y ofrece recomendaciones.
+	
+	%====================
+	% Bibliografía
+	%====================
+	\bibliography{bibliografia}
+	
+	%====================
+	% Apéndices (opcional)
+	%====================
+	\appendix
+	\chapter{Apéndice A}
+	Información adicional relevante.
+	
+\end{document}
+
+%====================
+% Archivo de bibliografía (bibliografia.bib)
+%====================
+@book{ejemploLibro,
+	author    = {Apellido, Nombre},
+	title     = {Título del Libro},
+	year      = {2020},
+	publisher = {Editorial}
+}
+
+@article{ejemploArticulo,
+	author  = {Apellido, Nombre},
+	title   = {Título del Artículo},
+	journal = {Nombre de la Revista},
+	year    = {2021},
+	volume  = {10},
+	number  = {2},
+	pages   = {123--134}
+}
